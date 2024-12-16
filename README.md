@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 trong file app.py có đoạn code sau 
 ```python
 def call_gpt_api(prompt):
@@ -22,3 +23,6 @@ def call_gpt_api(prompt):
 
 @app.route('/api/chat', methods=['POST'])
 ```
+=======
+# demo
+>>>>>>> fffd168b0113c73e7dc4c51e73f5e71cd4ff3255
