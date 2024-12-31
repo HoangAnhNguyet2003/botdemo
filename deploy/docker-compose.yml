@@ -7,3 +7,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:80"
+  chatbot-be:
+    build:
+      context: ../Assistant_tv  # Use the current directory for the build context
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
