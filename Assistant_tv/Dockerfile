@@ -8,7 +8,8 @@ WORKDIR /app
 COPY . /app
 
 # Install any needed dependencies specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements_new.txt
+#RUN pip install --no-cache-dir -r requirements_new.txt
+RUN pip install -r requirements_new.txt
 
 # Expose port 5000 (default port for Flask)
 EXPOSE 5000
@@ -19,4 +20,4 @@ ENV FLASK_ENV=production
  # or development if you re in dev mode
 
 # Run the application
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD ["python", "app.py", "--host=0.0.0.0"]
